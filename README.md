@@ -9,7 +9,9 @@ For example, a game or application written in the C language that compiles on MS
 # Is this possible?
 Yes, actually this project is similar to Emscripten or CheerpJS projects. They compile C or C++ code in the low-level intermediate language LLVM, and then transpile LLVM to the JavaScript language. To achieve better performance, they also generate asm.js code and now WebAssembly code. So native code transpiled to the Web at near native speed!
 However, this looks like this is the death of the ubiquitous JavaScript. This is a just a matter of time and efforts before we can see Java bytecode or C# JIT running at near native speed on the Web.
-According to Jeff Atwood's law > "Any application that can be written in JavaScript, will eventually be written in JavaScript.". This does not seem really the case with WebAssembly.
+According to Jeff Atwood's law:
+> Any application that can be written in JavaScript, will eventually be written in JavaScript.
+It looks like this is anymore true with WebAssembly.
 
 As a number of applications, games and libraries were successfully ported from C/C++ to the Web and JavaScript, thanks to Emscripten, this means alternatives like sysclone.js are possible in the JavaScript language.
 
