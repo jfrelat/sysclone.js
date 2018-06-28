@@ -27,4 +27,25 @@ sysclone.js could support many source languages and simulate many operating syst
 * Supported features : VGA display, terminal sound, keyboard, mouse, gamepad...
 * Supported libraries : DJGPP, Allegro, SDL, libc, POSIX...
 
+# Any examples?
+
+```java
+// Hello World in Java
+
+class HelloWorld {
+  static public void main( String args[] ) {
+    System.out.println( "Hello World!" );
+  }
+}
+```
+would be translated into
+```javascript
+// Hello World in Java
+
+class HelloWorld {
+  static main( args ) {
+    System.out.println( "Hello World!" );
+  }
+}
+```
 
