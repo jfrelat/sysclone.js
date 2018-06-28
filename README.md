@@ -13,5 +13,15 @@ According to Jeff Atwood's law > "Any application that can be written in JavaScr
 
 As a number of applications, games and libraries were successfully ported from C/C++ to the Web and JavaScript, thanks to Emscripten, this means alternatives like sysclone.js are possible in the JavaScript language.
 
-# How does it work?
+# Why this is different?
+sysclone.js rely on the strengthes of the JavaScript language itself and its evolutions (ES6, ES7, ES8...). Instead of allocating memory heap and stack like Emscripten, we can allocate typed arrays, create objects for C structs, turn synchronous and blocking code into asynchronous code with async/await...
+This project focuses not on performance but rather on cloning as most as possible the original source code of the application into its JavaScript translation, keeping the original code indentation, style, comments. Of course, the final code may be optimized, minified or whatever but this is 100% pure JavaScript in the end.
+
+# What are the goals?
+sysclone.js could support many source languages and simulate many operating systems, using either high-level or low-level library implementations.
+Supported languages for example : C, C++, Java, Swift, Python, PHP, C#...
+Supported OS for example : MS-DOS, Windows, Linux, SunOS, MacOS...
+Supported features : VGA display, terminal sound, keyboard, mouse, gamepad...
+Supported libraries : DJGPP, Allegro, SDL, libc, POSIX...
+
 
