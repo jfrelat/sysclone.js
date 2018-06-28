@@ -38,7 +38,7 @@ class HelloWorld {
   }
 }
 ```
-would be translated into
+would be syscloned into
 ```javascript
 // Hello World in Java
 
@@ -49,3 +49,50 @@ class HelloWorld {
 }
 ```
 
+```csharp
+//Hello World in C#
+class HelloWorld
+{
+    static void Main()
+    {
+        System.Console.WriteLine("Hello, World!");
+    }
+}
+````
+would be syscloned into
+```javascript
+//Hello World in C#
+class HelloWorld
+{
+    static Main()
+    {
+        System.Console.WriteLine("Hello, World!");
+    }
+}
+```
+
+```c
+/* Hello World in C, Ansi-style */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+  puts("Hello World!");
+  return EXIT_SUCCESS;
+}
+```
+would be syscloned into
+```javascript
+/* Hello World in C, Ansi-style */
+
+//#include <stdio.h>
+//#include <stdlib.h>
+
+function main()
+{
+  puts("Hello World!");
+  return EXIT_SUCCESS;
+}
+```
