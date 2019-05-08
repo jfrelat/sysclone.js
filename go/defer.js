@@ -33,12 +33,12 @@ func main() {
 // Sysclone version.
 function main() {
   deferFunction((defer) => {
-	  fmt.Println("counting")
+    fmt.Println("counting")
 
-	  for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
       defer(() => fmt.Println(i))
-	  }
+    }
 
-	  fmt.Println("done")
+    fmt.Println("done")
   })
 }
